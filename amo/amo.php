@@ -13,7 +13,7 @@ require_once 'access.php';
     $phone = htmlspecialchars($_POST['phone']);
 
 $custom_field_id = 454021;
-$custom_field_value = 'тест';
+$custom_field_value = 'Заявка Абрамов';
 
 $ip = '1.2.3.4';
 $domain = 'site.ua';
