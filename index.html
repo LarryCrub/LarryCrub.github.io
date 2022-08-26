@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!--Кнопка-->
+    <button class="btn" onclick="myFunction()">
+        Кликни
+    </button>
+
+
+<!--Pop-up-->
+    <div class="popup" id="myDIV">
+        
+        <div class="popup_header">
+            <h2>Получите набор файлов <br> для руководителя:</h2>
+            <div class="cross" onclick="myFunction()">
+                <img src="./img/cross.gif" alt="Закрыть" width="25px" height="25px">
+            </div>
+        </div>
+            <div class="popup_content">
+                <div class="popup_pck">
+                    <div class="popup_lot">
+                        <img src="./img/doc.gif"  width="50px" height="50px">
+                        <img src="./img/xls.gif"  width="50px" height="50px">
+                        <img src="./img/pdf.gif"  width="50px" height="50px">
+                        <img src="./img/pdf.gif"  width="50px" height="50px">
+                        <img src="./img/pdf.gif"  width="50px" height="50px">
+                        <img src="./img/pdf.gif"  width="50px" height="50px">
+                        <img src="./img/pdf.gif"  width="50px" height="50px">
+                    </div>
+                    <div style="position: relative;">
+                        <div style="margin-top: 25px; position: absolute;">
+                            <img src="./img/book.gif" >
+                        </div>
+                        <div style="position: absolute; top: 150px;">
+                            <img src="./img/notebook.gif">
+                        </div>
+                        <div style="position: absolute; top: 50px;">
+                            <img src="./img/phone.gif">
+                        </div>
+                    </div>
+
+                </div>
+<!--Форма-->
+                <div class="popup_form">
+                    <form action="/form.php" method="POST">
+                        <label for="email">Введите Email для получения файлов:</label>
+                        <br>
+                        <input name="email" type="email" class="popup_input" placeholder="E-mail">
+                        <br>
+                        <label for="phone">Введите телефон для подтверждения доступа:</label>
+                        <br>
+                        <input required name="phone" type="phone" class="popup_input" placeholder="+7 (000) 000-00-00">
+                        <br>
+                        <button class="popup_button" onclick="">
+                            <div style="font-size: 25px; color: white; ">
+                                Скачать файлы
+                            </div>
+                            <div style="margin-left: 50px;">
+                               <img src="./img/hand.gif" >
+                            </div>
+                        </button>
+                        <div class="popup_footer">
+                            <div style="margin: auto;">
+                                PDF 4,7MB
+                            </div>
+                            <div style="margin: auto;">
+                                DOC 0,8MB
+                            </div>
+                            <div style="margin: auto;">
+                                XLS 1,2MB
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+    </div>
+
+
+    <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"980491",hash:"1e4c9e4061e20aa12e40d2c35aa0f55f",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_980491" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1661497876"></script>
+ 
+</body>
+<style>
+    .btn {
+        width: 235px;
+        height: 70px;
+        font-size: 25px;
+        color: white;
+        background-color: #ff0000;
+        border: 0px;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;	
+    }
+
+    .popup {
+        background-color: white;
+        padding: 10px 50px 25px 50px;
+        margin: auto;
+        width: 910px;
+        height: 550px;
+        border-radius: 25px;
+        display: none;
+    }
+    .popup_header{
+        position: relative;
+        display: flex;
+    }
+    .popup_content {
+        display: flex;
+    }
+    h2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .cross{
+       margin-left: auto;
+       margin-top: 15px;
+    }
+    .popup_form {
+        display: block;
+        margin-left: 30px;
+    }
+    .popup_input {
+        width: 330px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid;
+        border-color: grey;
+        padding-left: 20px;
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    label {
+        font-size: 18px;
+        color: black;
+        font-weight: 400;
+    }
+    .popup_button {
+        width: 350px;
+        height: 70px;
+        background-color: #3cc36d;
+        border: 0px;
+        border-radius: 10px;
+        display: flex;
+        padding: 20px;
+        cursor: pointer;
+    }
+    .popup_lot {
+        display: flex;
+    }
+    .popup_pck{
+        width: 450px;
+    }
+    .popup_footer{
+        font-size: 14px;
+        color: grey;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        padding: 25px;
+    }
+    img{
+        cursor: pointer;
+    }
+</style>
+
+<script src="app.js"></script>
+</html>
