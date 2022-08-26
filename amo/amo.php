@@ -18,7 +18,7 @@ $custom_field_value = 'тест';
 $ip = '1.2.3.4';
 $domain = 'site.ua';
 $price = 0;
-$pipeline_id = 5059931;
+$pipeline_id = 5704864;
 $user_amo = 0;
 
 $utm_source   = '';
